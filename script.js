@@ -1,4 +1,10 @@
-function saveText() {
-    let inputText = document.getElementById("textInput").value;
-    document.getElementById("output").innerText = "Saved Text: " + inputText;
-}
+document.addEventListener('DOMContentLoaded', () => {
+    fetch('https://captcha-check.up.railway.app')
+        .then(response => response.json())
+        .then(data => {
+            console.log('Response from captcha-check:', data);
+        })
+        .catch(error => {
+            console.error('Error fetching captcha check:', error);
+        });
+});
