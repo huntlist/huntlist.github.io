@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', () => {
+console.log('Logging')
     fetch('https://captcha-check.up.railway.app')
         .then(response => response.json())
         .then(data => {
@@ -7,4 +7,3 @@ document.addEventListener('DOMContentLoaded', () => {
         .catch(error => {
             console.error('Error fetching captcha check:', error);
         });
-});
