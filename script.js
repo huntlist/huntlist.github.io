@@ -9,3 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
             console.error('Error fetching captcha check:', error);
         });
 });
+
+function goToPostPage() {
+    window.location.href = 'postpage.html';
+  }
